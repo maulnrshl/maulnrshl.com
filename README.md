@@ -25,4 +25,4 @@ This is my personal website, featuring my project portfolio, my experiences, and
 
 ## Preview
 
-- ![Website Preview](/assets/Home%20Page.png)
+- ![Website Preview](/assets/home_page.png)
