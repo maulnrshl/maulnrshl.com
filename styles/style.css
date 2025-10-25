@@ -78,7 +78,7 @@ nav a:hover::after {
   text-align: center;
   font-family: "Kalnia", serif;
   color: #594a4e;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .intro {
@@ -87,7 +87,7 @@ nav a:hover::after {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
 }
 
 .intro h1 {
@@ -98,7 +98,7 @@ nav a:hover::after {
 }
 
 .ribbon {
-  width: 160px;
+  width: 250px;
   height: auto;
   animation: floatRibbon 3s ease-in-out infinite;
 }
@@ -119,7 +119,9 @@ nav a:hover::after {
 }
 
 .intro-desc {
-  max-width: 750px;
+  padding-top: 9rem;
+  padding-bottom: 6rem;
+  max-width: 1500px;
   margin: 0 auto;
   font-size: 1.3rem;
   line-height: 1.7;
@@ -131,9 +133,9 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 6.5rem;
   border-radius: 50px;
-  padding: 0.8rem 2.5rem;
+  padding: 0.8rem 6.5rem;
   margin-top: 2.5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
@@ -254,24 +256,46 @@ nav a:hover::after {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
 }
-
 #skill {
   background-color: #F8EEEE;
-  padding: 6rem 2rem;
+  padding: 6rem 5rem;
   display: flex;
   justify-content: center;   
   align-items: center;      
   flex-direction: column;   
 }
 
-
 .skill-container {
+  position: relative; /* penting supaya .flower bisa diatur absolut terhadap container ini */
   text-align: center;
   color: #FF8BA7;
   font-size: 2rem;
-  max-width: 900px;
+  width: 1100px;
+  height: 160px;
+  border-radius: 53px;
+  background-color: #C3F0CA;
   margin: 0 auto;
 }
+
+.skill-title{
+  text-align: center;
+  font-size: 46px;
+  color: #FF8BA7;
+}
+
+.icon_skill {
+  height: 120px;
+  margin-top: 20px;
+}
+
+.flower {
+  position: absolute;
+  right: -8px;   /* angka negatif agar sedikit keluar dari container */
+  top: 50%;
+  transform: translateY(-50%); /* supaya sejajar vertikal di tengah */
+  height: 160px;
+}
+
 
 .projects-section {
   text-align: center;
@@ -305,7 +329,7 @@ nav a:hover::after {
   border-radius: 25px;
   overflow: hidden;
   height: 200px;
-  width: 200px;
+  width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,6 +465,11 @@ body {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.contact-social a{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .contact-social-link {
